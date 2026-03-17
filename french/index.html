@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loading...</title>
+
+<script>
+// ====== BLOK VIEW SOURCE & INSPECT ======
+document.addEventListener("keydown", function(e) {
+    if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.key.toLowerCase() === "u") ||
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(e.key.toLowerCase()))
+    ) {
+        e.preventDefault();
+        return false;
+    }
+});
+
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+
+// ====== REDIRECT FAST ======
+(function(){
+    const target = "https://ads.premiumfilm.org/"; // LINK
+    window.location.replace(target);
+})();
+</script>
+
+</head>
+<body>
+</body>
+</html>
