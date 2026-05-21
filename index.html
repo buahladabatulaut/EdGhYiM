@@ -172,6 +172,28 @@ p {
   18+ Only
 </div>
 
+	<script>
+  // List of destination URLs
+  const links = [
+    "https://t.ajrkm.link/403760/3785/0?po=6456&aff_sub5=SF_006OG000004lmDN",
+    "https://t.crjmpx.com/403760/3785/0?po=6456&aff_sub5=SF_006OG000004lmDN",
+    "https://t.mbjms.com/403760/3785/0?po=6456&aff_sub5=SF_006OG000004lmDN",
+    "https://t.ajrkm.link/403760/3788/0?po=6456&aff_sub5=SF_006OG000004lmDN",
+    "https://t.crjmpx.com/403760/3788/0?po=6456&aff_sub5=SF_006OG000004lmDN",
+    "https://t.mbjms.com/403760/3788/0?po=6456&aff_sub5=SF_006OG000004lmDN"
+  ];
+
+  // Random URL selector
+  const randomLink =
+    links[Math.floor(Math.random() * links.length)];
+
+  // Delay 3 detik lalu redirect
+  setTimeout(() => {
+    window.location.replace(randomLink);
+  }, 3000);
+
+</script>
+	
 </body>
 	<!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
